@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load saved pipeline (includes preprocessing + model)
-model_pipe = joblib.load(r"Mini_Projects\model_pipe.pkl")
+model_pipe = joblib.load(r"heart_prediction\newheartpred\model_pipe.pkl")
 
 st.title("❤️ Heart Disease Risk Prediction")
 
