@@ -1,9 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
-
+import os
+BASE_DIR = os.path.dirname(__file__)
+model_path = os.path.join(BASE_DIR, "heart-prediction", "model_pipe.pkl")
+model_pipeline = joblib.load(model_path)
 # Load saved pipeline (includes preprocessing + model)
-model_pipe = joblib.load(r"heart_prediction\newheartpred\model_pipe.pkl")
 
 st.title("❤️ Heart Disease Risk Prediction")
 
