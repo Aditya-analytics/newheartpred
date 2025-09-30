@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import os
 BASE_DIR = os.path.dirname(__file__)
-model_path = os.path.join(BASE_DIR, "heart-prediction", "model_pipe.pkl")
+model_path = os.path.join(BASE_DIR, "heart-prediction","newheartpred" ,"model_pipe.pkl")
 model_pipe = joblib.load(model_path)
 # Load saved pipeline (includes preprocessing + model)
 
